@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #08D9D6;
+  --hover: oklch(0.6 0.118 184.704);
+}
+.bg-primary {
+  background-color: var(--primary);
+}
+.bg-primary:hover {
+  background-color: var(--hover);
+}
+.text-primary {
+  color: var(--primary);
+}
+.hero {
+  max-width: 1200px;
+  margin-top: 100px;
+}
+.title {
+  font-weight: bold;
+}
+.cl-internal-1dauvpw, .cl-internal-1hp5nqm {
+  display: none;
+}
+header {
+  position: relative;
+}
+.carts {
+  position: absolute;
+  top: 64px;
+  right: 0;
+}
+.price {
+  font-size: 32px;
+  font-weight: bold;
+}
