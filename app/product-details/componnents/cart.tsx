@@ -35,7 +35,7 @@ export default function CartItem(cart: Cart) {
 
   return showCart && (
       <li className="flex items-center justify-between gap-4 rounded-sm border border-gray-200 bg-white p-4 shadow-sm">
-        {/* <Image src={`http://localhost:1337${product?.banner.formats.thumbnail.url}` || ""}  alt={`${product?.title}`} width={100} height={100} className="size-16 rounded-sm object-cover"/> */}
+        <Image src={`http://localhost:1337${product?.banner.formats.thumbnail.url}` || ""}  alt={`${product?.title}`} width={100} height={100} className="size-16 rounded-sm object-cover"/>
 
           <h3 className="text-sm text-gray-900">{product?.title}</h3>
 

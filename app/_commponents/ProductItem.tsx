@@ -11,7 +11,7 @@ export default function ProductItem({product}: ProductProps) {
     <div className="">
         <Link href={`/product-details/${product.id}`}>
           <Image 
-              src={`http://localhost:1337${product.banner.formats.thumbnail.url}`}
+              src={`${process.env.NEXT_PUBLIC_URL}${product.banner.formats.thumbnail.url}`}
               alt={product.title}
               width={300}
               height={300}

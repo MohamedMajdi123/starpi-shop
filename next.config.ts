@@ -16,7 +16,6 @@ const nextConfig: NextConfig = {
   },
   // إعدادات أخرى (إذا كنت بحاجة إليها)
   reactStrictMode: true, // تفعيل وضع القواعد الصارمة في React
-  swcMinify: true, // تفعيل تقليل الكود باستخدام SWC
 };
 
 export default nextConfig;

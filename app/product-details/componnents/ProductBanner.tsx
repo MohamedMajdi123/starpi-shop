@@ -58,7 +58,7 @@ export default function ProductDetails({id} : {id: string}) {
     return (
       <>
         <div className="grid items-center sm:grid-cols-2 grid-cols-1 gap-5 mt-10 sm:gap-0 justify-around">
-          <Image src={`http://localhost:1337${product?.banner.formats.thumbnail.url}`}
+          <Image src={`${process.env.NEXT_PUBLIC_URL}${product?.banner.formats.thumbnail.url}`}
             width={400} 
             height={400} 
             alt={`${product?.title}`}

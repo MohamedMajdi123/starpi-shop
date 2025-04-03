@@ -9,6 +9,7 @@ export default function ProductSection() {
     const [productList, setProductList] = useState([]); // إنشاء حالة لتخزين المنتجات
     useEffect(() => {
         getLatestProducts_();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []); // إضافة مصفوفة فارغة
 
     const getLatestProducts_ = async () => {

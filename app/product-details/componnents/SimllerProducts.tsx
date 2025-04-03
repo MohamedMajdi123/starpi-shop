@@ -13,6 +13,7 @@ export default function SimllerProducts({category} : {category: string}) {
     const [productsList, setProductsList] = useState();
     useEffect(() => {
         getProductListByCategory();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     },[])
     const getProductListByCategory = async () => {
         try {
