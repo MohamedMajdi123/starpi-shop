@@ -3,14 +3,14 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   /* خيارات التكوين هنا */
   images: {
-    domains: ["localhost", "example.com"], // أضف النطاقات المطلوبة
+    domains: [`${process.env.NEXT_PUBLIC_URL}`, "example.com"], // أضف النطاقات المطلوبة
   },
   // إعدادات إعادة الكتابة (إذا كنت بحاجة إليها)
   async rewrites() {
     return [
       {
         source: '/api/:path*', // مسار الطلب
-        destination: 'http://localhost:1337/api', // وجهة API الخاصة بك
+        destination: `${process.env.NEXT_PUBLIC_REST_API_URL}`, // وجهة API الخاصة بك
       },
     ];
   },

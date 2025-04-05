@@ -9,7 +9,7 @@ interface CartItem {
 
 const addCartItem = async (cart: CartItem) => {
   try {
-    const response = await axios.post('http://localhost:1337/api/carts', {
+    const response = await axios.post(process.env.NEXT_PUBLIC_URL + '/api/carts', {
       data: cart, // تأكد من استخدام هذا الهيكل
     }, {
       headers: {
